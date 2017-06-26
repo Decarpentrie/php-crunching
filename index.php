@@ -5,10 +5,11 @@
 
     // exercice dictionnaire
 
-    // echo str_word_count($string);
-    if ($string <= 15) {
-        echo strlen($string);
-    }
+    echo " le dictionnaire contient ". count($string). " mots";
+
+    echo "<br> il y a ". substr_compare($string, $string, 15). " mots qui contient 15 caractères";
+
+    echo "<br> il y a " . substr_count($string, 'w'). " mots qui contient la lettre w";
 
 
 
